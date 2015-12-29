@@ -9,93 +9,36 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
-        <title>Juan Diego Mantilla</title>
+        <title>Simple Repo App</title>
     </head>
     <body>
         <div class="app">
-            <div data-role="page" id="home">
-               <header data-role="header">
-                    <h1>Juan Diego Mantilla</h1>
-               </header>
+           <div data-role="page" data-theme="b">
+             <header data-role="header">
+                <h1>RepoFinder plus</h1>                 
+             </header>
+                
+             <div data-role="content">
+                <h1>RepoFinder Application</h1>
+                <form>
+                    <input id="search_input" type="text" data-type="search" placeholder="Buscar usuario...">
+                    <button type="button" id="search_btn">Buscar</button>
+                </form>
+                <div id="user_info"></div>
+                <ul id="search_list" data-role="listview"></ul>
+                <br><br>
+                <h3>Ultimos Repo</h3>
+                <ul id="repo_list" data-role="listview"></ul>
+                       
+             </div>
 
-               <div data-role="content">
-                    <nav data-role="navbar">
-                        <ul>
-                            <li><a href="#home" class="ui-btn-active">Inicio</a></li>
-                            <li><a href="#about">Info</a></li>
-                            <li><a href="#contact">Encuentranos</a></li>
-                        </ul>
-                    </nav>
-                    <h3>Bienvenido</h3>
-                    <img class="banner" src="img/banner.png">
-                     <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec convallis leo, non varius nunc. Etiam varius urna odio, id venenatis ligula posuere sed. Nunc nisi neque, laoreet vitae tellus in, efficitur cursus massa. Nulla eu augue mattis, fringilla turpis in, aliquet neque. Suspendisse potenti. Cras molestie bibendum orci non pharetra. Praesent a nibh sit amet leo faucibus suscipit
-                        </p>
-                    <a href="#contact" class="ui-shadow ui-btn ui-corner-all">¡Estamos disponibles!</a>
-               </div>
-
-               <footer data-role="footer">
-                    <h3>Todos los derechos reservados &copy; 2015
-               </footer>
-            </div>
-
-            <div data-role="page" id="about">
-               <header data-role="header">
-                    <h1>Sobre Juan Diego</h1>
-               </header>
-
-               <div data-role="content">
-                    <nav data-role="navbar">
-                        <ul>
-                            <li><a href="#home">Inicio</a></li>
-                            <li><a href="#about" class="ui-btn-active">Info</a></li>
-                            <li><a href="#contact">Encuentranos</a></li>
-                        </ul>
-                    </nav>
-                     <h3>Info</h3>
-                       <p>Morbi at faucibus dolor, vel feugiat erat. Donec nisl mauris, ultrices facilisis volutpat vitae, vehicula ac quam. Proin eleifend, mi sit amet porttitor pharetra, tellus lectus tristique lectus, eu maximus lorem felis eu mauris. Maecenas lorem urna, pellentesque nec auctor et, ultricies eget lacus. Morbi iaculis viverra magna, vel fringilla ipsum egestas ut. Aliquam scelerisque dignissim massa. Aenean quis elit viverra,</p>
-                       <p>Nec auctor et, ultricies eget lacus. Morbi iaculis viverra magna, vel fringilla ipsum egestas ut. Aliquam scelerisque dignissim massa. Aenean quis elit viverra,</p>
-               </div>
-
-               <footer data-role="footer">
-                    <h3>Copyright &copy; 2015
-               </footer>
-            </div>
+             <footer data-role="footer">
+                 <h3>Copyright &copy; 2015</h3>
+             </footer>
+           </div> <!-- page -->
+        </div><!-- app -->
 
 
-            <div data-role="page" id="contact">
-               <header data-role="header">
-                    <h1>Contacto JDM</h1>
-               </header>
-
-               <div data-role="content">
-                    <nav data-role="navbar">
-                        <ul>
-                            <li><a href="#home">Inicio</a></li>
-                            <li><a href="#about">Info</a></li>
-                            <li><a href="#contact" class="ui-btn-active">Encuentranos</a></li>
-                        </ul>
-                    </nav>
-                    <h3>Encuentranos</h3>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.7356291193556!2d-73.10927486937048!3d7.065526779363305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x9a6da01a89653676!2sLa+Peninsula!5e0!3m2!1sen!2sco!4v1451067768615" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <h3>Estamos ubicados en:</h3>
-                    <ul>
-                        <li><strong>JDM Cheff</strong></li>
-                        <li>Peninsula Cañaveral</li>
-                        <li>Torre 3 apto 404</li>
-                        <li><strong>Email: </strong> juandiegomantilla@gmail.com</li>
-                        <li><strong>Celular: </strong>300 552 3770</li>
-                    </ul>
-               </div>
-
-               <footer data-role="footer">
-                    <h3>Copyright &copy; 2015
-               </footer>
-            </div>
-
-        </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.mobile.js"></script>

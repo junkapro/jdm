@@ -1,3 +1,8 @@
-.banner,.map{
-    width:100%;
+.thumbnail{
+    width:60px;
+    height:auto;
+    padding:3px;
+    border:1px #ccc solid;
+    margin:5px;
+    float: left;
 }
